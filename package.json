@@ -7,6 +7,7 @@
     "start": "node ./dist/src/web-api/api/index.js",
     "dev": "nodemon ./src/web-api/api/index.ts",
     "tsc": "tsc",
+    "build": "tsc",
     "postinstall": "tsc",
     "test": "jest"
   },

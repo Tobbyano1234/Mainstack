@@ -7,6 +7,12 @@ export class Product extends Document {
     price: number;
     imageUrl: string;
 };
+export class User extends Document {
+    name: string;
+    description: string;
+    price: number;
+    imageUrl: string;
+};
 
 const ProductSchema = new Schema({
     name: { type: String, required: true },

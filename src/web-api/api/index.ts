@@ -14,9 +14,12 @@ export const startServer = async () => {
         return server.test();
     }
     const dbManager = startDB();
-    dbManager.live(() => {
+    return dbManager.live(() => {
+        return server.live();
     });
-    return server.live();
+//    dbManager.live(() => {
+//     });
+//     return server.live();
 };
 
 export default startServer()
